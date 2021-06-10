@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  background: url("https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG11c2ljfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 7rem 0;
+  text-align: center;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+header * {
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 60rem;
+  max-width: 90%;
+}
+
+form .form-control {
+  border-radius: 5rem;
+  padding: 0.5rem;
+  flex-grow: 2;
+  font-size: 1.5rem;
+  width: 60vw;
+}
+
+form .btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #98afc7;
+  color: #fff;
+  font-size: 1.3rem;
+  border-radius: 5rem;
+  width: 20%;
+}
+
+.btn:focus,
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn {
+  font-size: 1.2rem;
+  background-color: #98afc7;
+  border: 0;
+  border-radius: 1rem;
+  padding: .4rem 1rem
+}
+
+ul.songs {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.songs li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.container {
+  margin: 3rem auto;
+  max-width: 100%;
+  width: 50rem;
+  text-align: center;
+}
+
+.container h2 {
+  font-weight: 300;
+}
+
+.container p {
+  text-align: center;
+}
+
+.container span {
+  font-size: 1.3rem;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.centered .btn {
+  transform: scale((1.3));
+  margin: 1.5rem;
+}
